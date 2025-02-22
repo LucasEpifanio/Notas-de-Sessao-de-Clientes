@@ -1,0 +1,124 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #424242;
+  background-color: #f1f1f1;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: default;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+button, input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* ============================== */
+/* 🎨 ROOT VARIABLES & THEMING     */
+/* ============================== */
+:root {
+  --primary-color: #24507c;
+  --text-color: #424242;
+  --background-color: #f1f1f1;
+  --button-bg: #6d6d6d;
+  --button-hover-border: #24507c;
+}
+
+/* ============================== */
+/* 🔠 TIPOGRAFIA                  */
+/* ============================== */
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+p {
+  color: var(--text-color) !important;
+}
+
+/* ============================== */
+/* 🔗 LINKS                       */
+/* ============================== */
+a {
+  font-weight: 500;
+  color: #f3f3f3;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #f1f1f1;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  
+}
+
+/* ============================== */
+/* 🎛 BOTÕES                      */
+/* ============================== */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: var(--button-bg);
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.25s;
+}
+
+button:hover {
+  border-color: var(--button-hover-border);
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+}
+
+/* ============================== */
+/* 📱 RESPONSIVIDADE              */
+/* ============================== */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #7b99b3;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    background-color: var(--primary-color);
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+.css-1qltlow-MuiTabs-indicator {
+  top: 42px !important;
+}
+.css-hmk518-MuiButtonBase-root-MuiTab-root:hover {
+  color: #1976d2 !important;
+}
