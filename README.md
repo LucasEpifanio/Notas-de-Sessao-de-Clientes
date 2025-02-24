@@ -90,7 +90,7 @@ npx json-server --watch backend/db.json --port 3001
 
 Clone este repositório:
 
-git clone https://github.com/seu-usuario/client-session-notes-viewer.git
+git clone https://github.com/LucasEpifanio/Notas-de-Sessao-de-Clientes.git
 
 Acesse a pasta do projeto:
 
