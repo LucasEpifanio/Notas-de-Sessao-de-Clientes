@@ -1,7 +1,7 @@
 export interface SessionNote {
     id: string;
     clientId: number;
-    date?: string;
+    date: string;
     note: string;
   }
   
