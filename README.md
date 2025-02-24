@@ -65,7 +65,7 @@ npm install
 
 Inicie o backend simulado:
 
-npx json-server --watch backend/db.json --port 3001
+json-server --watch db.json --port 3001
 
 Inicie o frontend:
 
