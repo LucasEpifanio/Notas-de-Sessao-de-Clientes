@@ -8,44 +8,7 @@ O Client Session Notes Viewer é uma aplicação web desenvolvida para facilitar
 
 A estrutura do projeto segue um padrão modular para melhor organização do código:
 
-client-session-notes-viewer/
-├── backend/                 # Backend (Simulação com JSON Server)
-│   ├── db.json              # Banco de dados JSON
-├── public/                  # Arquivos estáticos
-│   ├── favicon.png          # Ícone da aplicação
-│   ├── vite.svg             # Logo do Vite
-├── src/                     # Código fonte principal
-│   ├── assets/              # Recursos estáticos
-│   ├── components/          # Componentes reutilizáveis
-│   │   ├── AddClient.tsx    # Formulário de adição de cliente
-│   │   ├── AddSessionNote.tsx # Formulário de adição de nota
-│   │   ├── Navbar.tsx       # Barra de navegação
-│   ├── hooks/               # Custom Hooks
-│   │   ├── useAddClient.tsx
-│   │   ├── useAddSessionNote.tsx
-│   │   ├── useClients.tsx
-│   │   ├── useSessionNotes.tsx
-│   ├── pages/               # Páginas da aplicação
-│   │   ├── AddClient.tsx
-│   │   ├── ClientDetails.tsx
-│   │   ├── ClientList.tsx
-│   │   ├── Home.tsx
-│   │   ├── NotFound.tsx
-│   ├── routes/              # Configuração de rotas
-│   │   ├── routes.tsx
-│   ├── services/            # Serviços de API
-│   │   ├── api.tsx
-│   ├── types/               # Definições de tipos TypeScript
-│   │   ├── client.tsx
-│   │   ├── index.tsx
-│   │   ├── sessionNote.tsx
-│   ├── App.tsx              # Componente raiz
-│   ├── main.tsx             # Ponto de entrada principal
-│   ├── index.css            # Estilização global
-├── package.json             # Dependências do projeto
-├── tsconfig.json            # Configuração TypeScript
-├── vite.config.ts           # Configuração do Vite
-└── README.md                # Documentação do projeto
+![estrutura do projeto](public/client-session.png)
 
 🚀 Tecnologias Utilizadas
 
