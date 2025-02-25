@@ -20,21 +20,13 @@ const StyledPaper = styled(Paper)`
 
 const AddClientPage = () => {
   // Usa o hook personalizado para obter a lista de clientes existentes
-  const { data: existingClients = [], isLoading, error } = useClients();
+  const { data: existingClients = [], isLoading } = useClients();
 
   // Verifica se está carregando ou se houve um erro
   if (isLoading) {
     return (
       <Box sx={{ textAlign: 'center', padding: '20px' }}>
         <CircularProgress />
-      </Box>
-    );
-  }
-
-  if (error) {
-    return (
-      <Box sx={{ textAlign: 'center', padding: '20px', color: 'error.main' }}>
-        <Typography>Erro ao carregar clientes: {error.message}</Typography>
       </Box>
     );
   }

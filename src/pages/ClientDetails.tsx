@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { useClients } from "../hooks/useClients";
 import { useSessionNotes } from "../hooks/useSessionNotes";
 import AddSessionNote from "../components/AddSessionNote";
-import { List, ListItem, ListItemText, Typography, Box } from "@mui/material";
+import { List, ListItem, ListItemText, Typography, Box, CircularProgress } from "@mui/material";
 import PersonIcon from '@mui/icons-material/Person';
 
 const ClientDetails = () => {
@@ -10,7 +10,9 @@ const ClientDetails = () => {
   const { data: clients, isLoading: loadingClients, error: clientsError } = useClients();
   const { data: sessionNotes, isLoading: loadingNotes, error: notesError } = useSessionNotes();
 
-  if (loadingClients || loadingNotes) return <Typography>Carregando...</Typography>;
+  if (loadingClients || loadingNotes) return <Typography> <Box sx={{ textAlign: 'center', padding: '20px' }}>
+          <CircularProgress />
+        </Box></Typography>;
   if (clientsError || notesError) return <Typography color="error">Erro ao carregar os dados.</Typography>;
 
   const client = clients?.find((c) => c.id === id);
